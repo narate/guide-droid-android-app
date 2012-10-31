@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="choose_distance"></string>
+
+    <string-array name="radius">       
+        <item>1 กม.</item>
+        <item>2 กม.</item>
+        <item>3 กม.</item>
+        <item>4 กม.</item>
+        <item>5 กม.</item>
+        <item>10 กม.</item>
+        <item>15 กม.</item>
+        <item>20 กม.</item>
+        <item>25 กม.</item>
+        <item>30 กม.</item>
+    </string-array>
+
+</resources>

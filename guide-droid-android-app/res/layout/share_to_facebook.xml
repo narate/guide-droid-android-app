@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#F0F8DB">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/text_post"
+            android:layout_width="wrap_content"
+            android:layout_height="100dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dip"
+            android:ems="10"
+            android:inputType="textMultiLine" android:gravity="top">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_post"
+            android:layout_centerHorizontal="true"
+            android:text="Share" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/test_post"
+            android:layout_below="@+id/share"
+            android:layout_marginTop="24dp"
+            android:text="description" android:layout_margin="20dip" android:textColor="#000"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/description"
+            android:layout_alignRight="@+id/description"
+            android:layout_below="@+id/description"
+            android:src="@drawable/androidmarker" />
+
+    </RelativeLayout>
+
+</LinearLayout>

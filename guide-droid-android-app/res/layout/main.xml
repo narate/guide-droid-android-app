@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:src="@drawable/linux" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" android:gravity="center">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" android:gravity="center">
+
+            <Button
+                android:id="@+id/ar_view"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="AR View" />
+
+            <Button
+                android:id="@+id/list_view"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="List View" />
+
+            <Button
+                android:id="@+id/add_location"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Add location" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

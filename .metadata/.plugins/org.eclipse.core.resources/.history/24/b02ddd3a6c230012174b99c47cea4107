@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1" android:background="#D3E992">
+
+    <TextView
+        android:id="@+id/near_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="สถานที่ใกล้เคียง"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:textColor="#000">
+    </TextView>
+
+    <TextView
+        android:id="@+id/nearMyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:text="ระยะห่าง (กม.)" android:textColor="#000"/>
+    
+      <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/radius"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip" android:layout_weight="0.7">
+            </Spinner>
+
+            <Button
+                android:id="@+id/show"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="แสดง" android:layout_weight="0.3">
+            </Button>
+        </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="2dip"
+        android:drawSelectorOnTop="false" android:divider="#669900"/>
+   
+</LinearLayout>

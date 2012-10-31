@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ForkARFrameworkActivity!</string>
+    <string name="app_name">Guide Droid</string>
+    <string name="add_form">เพิ่มข้อมูลสถานที่ใหม่</string>
+    <string name="prompt">Choose a planet</string>
+
+    <string-array name="planets">
+        <item>กระเพราไก่ + ไข่ดาว</item>
+        <item>ข้าวผัดหมู</item>
+        <item>พริกแกงไก่</item>
+        <item>ไข่เจียวหมูสับ</item>
+        <item>ผัดไทย</item>
+        <item>ผัดซีอิ๊ว</item>
+        <item>ต้มยำกุ้ง</item>
+        <item>ผัดผักรวม</item>
+    </string-array>
+
+</resources>

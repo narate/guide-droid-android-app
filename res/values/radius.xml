@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="choose_distance"></string>
+
+    <string-array name="radius">       
+        <item>1 km.</item>
+        <item>2 km.</item>
+        <item>3 km.</item>
+        <item>4 km.</item>
+        <item>5 km.</item>
+        <item>10 km.</item>
+        <item>15 km.</item>
+        <item>20 km.</item>
+        <item>25 km.</item>
+        <item>30 km.</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D3E992"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#D3E992"
+        android:gravity="center"
+        android:paddingTop="5px" >
+
+        <RelativeLayout
+            android:id="@+id/InnerRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dip"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="TITLE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/title"
+                android:gravity="center"
+                android:text="Description"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@android:style/ButtonBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:background="#F0F8DB"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#D3E992"
+            android:orientation="vertical" >
+
+            <com.google.android.maps.MapView
+                android:id="@+id/mapview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:apiKey="0o0YPEvF0Vd6yYStCU7UcUoKpbHHuHcb6XbipqQ"
+                android:background="#F0F8DB"
+                android:clickable="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C5E26D"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/get_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_weight="0.40"
+            android:text="Navigate" >
+        </Button>
+
+        <Button
+            android:id="@+id/add_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_weight="0.40"
+            android:text="Add Photo" >
+        </Button>
+
+        <ImageButton
+            android:id="@+id/take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="0.20"
+            android:src="@android:drawable/ic_menu_camera" />
+    </LinearLayout>
+
+</LinearLayout>

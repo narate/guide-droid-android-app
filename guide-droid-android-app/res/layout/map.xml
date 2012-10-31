@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#D3E992">
+
+    <LinearLayout
+        style="@android:style/ButtonBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:orientation="vertical" android:background="#F0F8DB">
+
+        <RelativeLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"           
+            android:orientation="vertical" android:background="#D3E992">
+
+            <com.google.android.maps.MapView
+                android:id="@+id/mapview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:apiKey="0o0YPEvF0Vd6yYStCU7UcUoKpbHHuHcb6XbipqQ"
+                android:clickable="true" android:background="#F0F8DB"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:orientation="horizontal"
+        android:background="#C5E26D" >
+
+        <Button
+            android:id="@id/ar_view"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="AR Mode" />
+
+        <Button
+            android:id="@id/list_view"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="List" />
+
+        <Button
+            android:id="@id/add_location"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="Add" />
+
+    </LinearLayout>
+
+</LinearLayout>

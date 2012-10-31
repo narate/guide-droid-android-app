@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="choose_category"></string>
+
+    <string-array name="category">
+        <item>Category 0</item>
+        <item>Category 1</item>
+        <item>Category 2</item>
+        <item>Category 3</item>
+        <item>Category 4</item>
+        <item>Category 5</item>
+        <item>Category 6</item>
+        <item>Category 7</item>
+        <item>Category 8</item>
+    </string-array>
+
+</resources>

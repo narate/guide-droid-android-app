@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="choose_category"></string>
+
+    <string-array name="category">
+        <item>ร้านสะดวกซื้อ</item>
+        <item>ร้านอาหาร</item>
+        <item>ห้างสรรพสินค้า</item>
+        <item>หอพัก/ห้องเช่า รายเดือน</item>
+        <item>โรงแรม</item>
+        <item>ปั๊มน้ำมัน</item>
+        <item>น้ำตก</item>
+        <item>แหล่งท่องเที่ยวแนะนำ</item>
+        <item>ตลาด</item>
+    </string-array>
+
+</resources>

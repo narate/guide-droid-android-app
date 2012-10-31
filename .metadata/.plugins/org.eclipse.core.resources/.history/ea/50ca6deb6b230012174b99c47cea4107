@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#D3E992" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_weight="0.20"
+            android:text="รายละเอียด"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/categoryLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:text="หมวด/หมู่"
+            android:textColor="#000" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/place_name"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="0.7"
+                android:ems="10"
+                android:hint="ชื่อสถานที่"
+                android:maxLength="32"
+                android:textColor="#000" />
+
+            <ImageButton
+                android:id="@+id/take_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:layout_weight="0.3"
+                android:src="@android:drawable/ic_menu_camera" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/category"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" >
+        </Spinner>
+
+        <TextView
+            android:id="@+id/locationLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:text="คำอธิบาย"
+            android:textColor="#000" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="120dip"
+            android:layout_margin="10dip"
+            android:layout_weight="0.22"
+            android:gravity="top"
+            android:hint="คำอธิบาย"
+            android:inputType="textMultiLine"
+            android:maxLength="140"
+            android:textColor="#000" >
+        </EditText>
+
+        <Button
+            android:id="@+id/add_new_place"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="เพิ่มข้อมูลและภาพถ่าย" >
+        </Button>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20" android:gravity="center">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Searching location..." android:gravity="center" android:layout_gravity="center"/>
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout> 
+
+   
+</ScrollView>
